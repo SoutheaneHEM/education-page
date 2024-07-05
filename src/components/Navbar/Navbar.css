@@ -1,0 +1,71 @@
+nav {
+  /* background: #758694; */
+  width: 100%;
+  color: #fff;
+  padding: 5px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.logo {
+  width: 180px;
+}
+nav ul li {
+  display: inline-block;
+  margin: 10px 20px;
+  font-size: 16px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.dark-nav {
+  background: #304463;
+}
+
+.menu-icon {
+  display: none;
+}
+
+/*----Meida Query---*/
+@media (max-width: 1074px) {
+  .logo {
+    width: 140px;
+  }
+
+  nav ul li {
+    margin: 10px 15px;
+  }
+}
+
+@media (max-width: 843px) {
+  nav {
+    padding: 15px 0;
+  }
+  nav ul {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #304463;
+    z-index: -1;
+    width: 200px;
+    padding-top: 70px;
+    transition: 1s;
+    bottom: 0;
+  }
+  nav ul li {
+    display: block;
+    margin: 20px 35px;
+  }
+  .menu-icon {
+    display: block;
+    width: 35px;
+  }
+  .hide-mobile-menu {
+    right: -200px;
+  }
+}

@@ -1,0 +1,49 @@
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 60vh;
+}
+
+.contact-col {
+  flex-basis: 48%;
+  color: #fff;
+}
+
+.contact-col h3 {
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contact-col h3 img {
+  width: 50px;
+  margin-left: 10px;
+}
+
+.contact-col p {
+  max-width: 400px;
+  list-style: 0.3;
+}
+
+.contact-col ul li {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.contact-col ul li img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+@media (max-width: 700px) {
+  .contact {
+    display: block;
+  }
+  .contact-col {
+    padding: 20px auto;
+  }
+}
